@@ -50,6 +50,38 @@
   
   /* ===== STICKY ELEMENTS ===== */
   /* ===== MODERN HEADER STYLES ===== */
+  .menu-toggle {
+    display: none; /* Hidden on desktop */
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .burger-line {
+    width: 25px;
+    height: 3px;
+    background: var(--dark);
+    transition: all 0.3s ease;
+  }
+  
+  .menu-toggle.active .burger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu-toggle.active .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.active .burger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+  }
 .sticky-header {
     position: fixed;
     top: 0;
@@ -91,7 +123,6 @@
   .logo:hover {
     transform: scale(1.05);
   }
-  
   .nav-links {
     display: flex;
     gap: 2rem;
@@ -223,7 +254,14 @@
     background: #25D366;
     color: white;
   }
-  
+  @media (max-width: 768px) {
+    .speed-btn {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      bottom: 20px;
+    }
+  }
   /* ===== SECTION STYLES ===== */
   section {
     min-height: 100vh;
@@ -258,7 +296,9 @@
     margin: 0 auto;
     padding: 0 1rem;
   }
-  
+  .bg-gray-100 {
+    background: #f8f9fa;
+  }
   /* Stats grid */
   .stats-grid {
     display: grid;
@@ -362,8 +402,8 @@
   }
   /* ===== MODERN FOOTER STYLES ===== */
 .site-footer {
-    background: #1d3557;
-    color: #f1faee;
+  background: #000;
+  color: #fff;
     padding: 4rem 2rem;
     position: relative;
     overflow: hidden;
@@ -403,7 +443,7 @@
   }
   
   .footer-links a {
-    color: #a8dadc;
+    color: #ccc;
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
@@ -422,7 +462,7 @@
   }
   
   .footer-links a:hover {
-    color: white;
+    color: #fff;
     transform: translateX(5px);
   }
   
@@ -523,7 +563,27 @@
     background: #f77f00;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   }
-  
+  .scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 100vh;
+    background: linear-gradient(to bottom, 
+      white 0%, 
+      white 25%, 
+      black 25%, 
+      black 50%, 
+      white 50%, 
+      white 75%, 
+      black 75%,
+      black 100%
+    );
+    background-size: 100% 400%;
+    background-position: 0 0;
+    z-index: 9999;
+    transition: background-position 0.3s ease-out;
+  }
   /* Responsive Adjustments */
   @media (max-width: 768px) {
     .footer-container {

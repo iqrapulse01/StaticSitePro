@@ -88,10 +88,19 @@
             </div>
         </div>
     </header>
-
+    <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+    </button>
     <!-- Sticky Buttons -->
     <a href="https://pagespeed.web.dev/" class="sticky-button speed-btn">Check Site Score</a>
-    <a href="https://wa.me/1234567890" class="sticky-button whatsapp-btn">WhatsApp</a>
+    <a href="https://wa.me/PHONE_NUMBER" class="sticky-button whatsapp-btn">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-6.29 3.617c-.545 1.514-1.732 2.766-3.284 3.246-1.065.328-2.04.375-2.732.183-1.168-.319-1.827-1.426-1.91-1.559-.083-.133-.666-1.059-.666-2.02 0-.961.322-1.413.476-1.633.154-.221.333-.366.5-.366.126 0 .254.029.39.07.154.049.375.126.579.189.255.078.545.167.797.258.229.083.437.25.524.461.087.212.087 1.212.205 1.443.117.23.575.492 1.14.492.564 0 1.655-.32 2.477-1.52.822-1.199 1.148-2.472 1.195-2.743.047-.271-.08-.407-.283-.534-.204-.127-1.101-.543-1.356-.723-.255-.18-.437-.271-.656-.271-.219 0-.412.04-.583.119-.17.08-.723.339-1.32.62-2.03.96-2.743 1.358-3.282 2.118-.54.76-.405 1.795-.236 2.273.17.479.756 1.504 1.415 2.254.659.75 1.122 1.187 1.77 1.696.649.51 1.3.853 2.035 1.109.734-.149 1.243-.616 1.716-1.23.473-.615.863-1.433.976-1.843.112-.41.112-.76.078-.984-.034-.224-.129-.336-.238-.434-.108-.098-.219-.168-.366-.257-.146-.089-.317-.191-.366-.191-.049 0-.097-.03-.146-.03s-.097.01-.146.03c-.049.02-.097.04-.146.06-.146.069-.341.168-.497.257-.156.089-.292.129-.409.129-.117 0-.224-.04-.341-.129-.117-.089-.625-.465-1.172-1.031-.547-.565-1.015-1.262-1.133-1.472-.117-.21-.012-.397.058-.507.07-.109.175-.268.263-.407.088-.139.117-.229.175-.358.058-.129.029-.248-.02-.367-.048-.119-.439-1.078-.6-1.472-.162-.395-.324-.341-.439-.341-.117 0-.244.02-.39.039-.156.02-.366.029-.576.029-.21 0-.439-.01-.664-.049a6.698 6.698 0 0 1-.634-.139c-.205-.058-.352-.126-.478-.204-.126-.078-.21-.176-.273-.274-.064-.098-.134-.254-.185-.381-.05-.127-.089-.216-.127-.216s-.088.01-.205.03c-.117.019-.254.039-.39.068a.885.885 0 0 0-.273.157c-.078.078-.156.186-.234.294-.078.108-.166.225-.244.352-.078.127-.016.293.049.459.064.166.762 1.845 1.655 2.963.893 1.117 1.714 1.735 2.457 2.246.742.511 1.285.723 1.714.923.429.2.751.191.976.131.225-.059.439-.254.634-.449.195-.195.439-.528.586-.723.146-.195.293-.156.439-.107.146.049.922.434 1.302.634.38.2.634.264.732.343.097.078.146.166.097.264-.05.097-.05.166-.097.244-.049.078-.097.127-.146.186-.049.059-.097.107-.156.156-.058.049-.107.088-.156.127-.048.039-.086.078-.125.107z" />
+        </svg>
+    </a>
 
     <!-- Hero Section -->
     <section class="min-h-screen bg-black text-white flex flex-col justify-center items-center text-center px-4">
@@ -100,7 +109,7 @@
             <p class="text-xl mb-8 max-w-2xl mx-auto">Convert your slow WordPress site to a blazing-fast static website
                 in 24 hours.</p>
             <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition">
-                GET FREE AUDIT
+                <a href="mailto:audit@clientdomain.com" class="cta-button">Get Free Audit</a>
             </button>
         </div>
     </section>
@@ -141,26 +150,136 @@
                     <div class="p-6 text-gray-800">
                         <h3 class="font-bold text-lg mb-2">Before (WordPress)</h3>
                         <p class="text-red-600 mb-4">PageSpeed: 42</p>
-                        <img src="images/wp-slow.jpg" alt="Slow WordPress" class="rounded border border-gray-200">
+                        <img src="images/Pre Optimization.png" alt="Slow WordPress" class="rounded border border-gray-200">
                     </div>
                     <div class="p-6 text-gray-800">
                         <h3 class="font-bold text-lg mb-2">After (Static HTML)</h3>
                         <p class="text-green-600 mb-4">PageSpeed: 98</p>
-                        <img src="images/html-fast.jpg" alt="Fast Static" class="rounded border border-gray-200">
+                        <img src="images/Optimisation.png" alt="Fast Static" class="rounded border border-gray-200">
                     </div>
                 </div>
             </div>
 
             <button class="mt-12 bg-black text-white font-bold py-3 px-8 rounded-lg hover:bg-gray-800 transition">
-                SEE LIVE DEMO →
+
+                <a href="https://ctrdevelopments.com/" target="_blank" class="cta-button">SEE LIVE DEMO →</a>
             </button>
         </div>
     </section>
+    <section id="pricing" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Pricing Plans</h2>
+            <!-- Copy pricing cards from existing green section -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg overflow-hidden" data-aos="zoom-in">
+                    <div class="p-6 border-b">
+                        <h3 class="text-xl font-bold text-center">Basic</h3>
+                        <p class="text-4xl font-bold text-center my-4">$99</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Up to 5 pages
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Basic SEO
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 transition">
+                        Get Started
+                    </button>
+                </div>
 
+                <div class="bg-white text-gray-800 rounded-lg shadow-xl overflow-hidden transform scale-105"
+                    data-aos="zoom-in" data-aos-delay="100">
+                    <div class="bg-red-600 text-white p-2 text-center font-bold">MOST POPULAR</div>
+                    <div class="p-6 border-b">
+                        <h3 class="text-xl font-bold text-center">Standard</h3>
+                        <p class="text-4xl font-bold text-center my-4">$299</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Up to 15 pages
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Advanced SEO
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Contact Form
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 transition">
+                        Choose Plan
+                    </button>
+                </div>
+
+                <div class="bg-white text-gray-800 rounded-lg shadow-lg overflow-hidden" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <div class="p-6 border-b">
+                        <h3 class="text-xl font-bold text-center">Enterprise</h3>
+                        <p class="text-4xl font-bold text-center my-4">$599+</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Unlimited pages
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Premium Support
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Custom Features
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 transition">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Green Section: The Solution -->
     <section id="solution" class="min-h-screen text-white py-20 px-4">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12">⚡ Our Conversion Process</h2>
+            <h2 class="text-4xl font-bold text-center mb-12">Our Conversion Process</h2>
 
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div class="bg-green-700 p-6 rounded-lg" data-aos="fade-up">
@@ -294,64 +413,79 @@
     <footer class="site-footer">
         <div class="footer-decoration decoration-1"></div>
         <div class="footer-decoration decoration-2"></div>
-        
+
         <div class="footer-container">
-          <div class="footer-column">
-            <h3>StaticSitePro</h3>
-            <p>Transforming slow WordPress sites into lightning-fast static websites since 2023.</p>
-            <div class="social-links">
-              <a href="#" class="social-icon">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
-              </a>
-              <a href="#" class="social-icon">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/></svg>
-              </a>
-              <a href="#" class="social-icon">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-              </a>
+            <div class="footer-column">
+                <h3>StaticSitePro</h3>
+                <p>Transforming slow WordPress sites into lightning-fast static websites since 2023.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
-          </div>
-          
-          <div class="footer-column">
-            <h3>Services</h3>
-            <ul class="footer-links">
-              <li><a href="#">WordPress Conversion</a></li>
-              <li><a href="#">Static Site Development</a></li>
-              <li><a href="#">Performance Optimization</a></li>
-              <li><a href="#">SEO Migration</a></li>
-              <li><a href="#">Ongoing Maintenance</a></li>
-            </ul>
-          </div>
-          
-          <div class="footer-column">
-            <h3>Company</h3>
-            <ul class="footer-links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          
-          <div class="footer-column">
-            <h3>Newsletter</h3>
-            <p>Get the latest web performance tips delivered to your inbox.</p>
-            <form class="newsletter-form">
-              <input type="email" class="newsletter-input" placeholder="Your email address" required>
-              <button type="submit" class="newsletter-btn">Subscribe</button>
-            </form>
-          </div>
+
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">WordPress Conversion</a></li>
+                    <li><a href="#">Static Site Development</a></li>
+                    <li><a href="#">Performance Optimization</a></li>
+                    <li><a href="#">SEO Migration</a></li>
+                    <li><a href="#">Ongoing Maintenance</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Get the latest web performance tips delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
         </div>
-        
+
         <div class="footer-bottom">
-          <p>&copy; 2024 StaticSitePro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>&copy; 2024 StaticSitePro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+                    Service</a></p>
         </div>
-      </footer>
+    </footer>
+    <div class="scroll-indicator"></div>
 
     <!-- AOS Animation -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
         AOS.init({
             duration: 800,
             once: true
@@ -362,6 +496,13 @@
         });
         document.querySelector('.menu-toggle').addEventListener('click', () => {
             document.querySelector('.nav-links').classList.toggle('active');
+        });
+        // line indicator 
+        window.addEventListener('scroll', () => {
+            const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = window.scrollY;
+            const progress = (scrolled / scrollable) * 300; // 300% matches background
+            document.querySelector('.scroll-indicator').style.backgroundPosition = `0 ${progress}%`;
         });
     </script>
 </body>
